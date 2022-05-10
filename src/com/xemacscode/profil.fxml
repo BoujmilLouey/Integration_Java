@@ -10,34 +10,35 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1023.0" styleClass="blue-panel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xemacscode.ProfilController">
    <children>
-      <Label layoutX="884.0" layoutY="34.0" prefHeight="30.0" prefWidth="105.0" text="sign out" textFill="#22f25f">
+      <Label layoutX="884.0" layoutY="34.0" prefHeight="30.0" prefWidth="105.0" text="sign out" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <ImageView fitHeight="171.0" fitWidth="196.0" layoutX="180.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="171.0" fitWidth="196.0" layoutX="379.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@user.png" />
+            <Image url="@tfd.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="50.0" layoutY="150.0" prefHeight="30.0" prefWidth="127.0" text="profil picture:" textFill="#2ff222">
+      <Label layoutX="203.0" layoutY="135.0" prefHeight="30.0" prefWidth="127.0" text="profil picture:" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="61.0" layoutY="264.0" prefHeight="30.0" prefWidth="105.0" text="username :" textFill="#22f238">
+      <Label layoutX="241.0" layoutY="264.0" prefHeight="30.0" prefWidth="105.0" text="username :" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="usernamelab" layoutX="172.0" layoutY="264.0" prefHeight="30.0" prefWidth="171.0" textFill="#2196f3">
+      <Label fx:id="usernamelab" layoutX="379.0" layoutY="264.0" prefHeight="30.0" prefWidth="171.0" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="61.0" layoutY="342.0" prefHeight="30.0" prefWidth="105.0" text="first name :" textFill="#22f233">
+      <Label layoutX="61.0" layoutY="342.0" prefHeight="30.0" prefWidth="105.0" text="first name :" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
@@ -47,7 +48,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="61.0" layoutY="410.0" prefHeight="30.0" prefWidth="105.0" text="last name :" textFill="#22f249">
+      <Label layoutX="61.0" layoutY="410.0" prefHeight="30.0" prefWidth="105.0" text="last name :" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
@@ -57,33 +58,33 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="67.0" layoutY="550.0" prefHeight="30.0" prefWidth="105.0" text="email :" textFill="#3be15a">
+      <Label layoutX="578.0" layoutY="342.0" prefHeight="30.0" prefWidth="105.0" text="email :" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="emaillab" layoutX="171.0" layoutY="550.0" prefHeight="30.0" prefWidth="273.0" textFill="#2196f3">
+      <Label fx:id="emaillab" layoutX="692.0" layoutY="342.0" prefHeight="30.0" prefWidth="273.0" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="61.0" layoutY="620.0" prefHeight="30.0" prefWidth="105.0" text="date:" textFill="#22f226">
+      <Label layoutX="578.0" layoutY="410.0" prefHeight="30.0" prefWidth="105.0" text="date:" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <DatePicker fx:id="datepicklab" layoutX="205.0" layoutY="620.0" prefHeight="31.0" prefWidth="190.0" />
-      <Label layoutX="45.0" layoutY="669.0" prefHeight="30.0" prefWidth="138.0" text="numero_tel :" textFill="#5ffc44">
+      <DatePicker fx:id="datepicklab" layoutX="695.0" layoutY="410.0" prefHeight="31.0" prefWidth="190.0" />
+      <Label layoutX="578.0" layoutY="490.0" prefHeight="30.0" prefWidth="138.0" text="numero_tel :" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="numtellab" layoutX="205.0" layoutY="669.0" prefHeight="30.0" prefWidth="138.0" textFill="#2196f3">
+      <Label fx:id="numtellab" layoutX="721.0" layoutY="490.0" prefHeight="30.0" prefWidth="138.0" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="61.0" layoutY="490.0" prefHeight="30.0" prefWidth="138.0" text="password :" textFill="#22f222">
+      <Label layoutX="61.0" layoutY="490.0" prefHeight="30.0" prefWidth="138.0" text="password :" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
@@ -94,24 +95,16 @@
          </font>
       </Label>
       <HBox alignment="CENTER_LEFT" layoutX="323.0" layoutY="580.0" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#signmein" prefHeight="38.0" prefWidth="456.0" styleClass="blue-btn" text="modify" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
          <padding>
             <Insets left="10.0" top="20.0" />
          </padding>
       </HBox>
-      <Button fx:id="db" layoutX="644.0" layoutY="193.0" mnemonicParsing="false" onAction="#Dashboard" prefHeight="43.0" prefWidth="339.0" styleClass="butt" stylesheets="@../css.css" text="Evenement" textFill="WHITE">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Button>
-      <Button layoutX="435.0" layoutY="665.0" mnemonicParsing="false" onAction="#signmein" prefHeight="38.0" prefWidth="97.0" styleClass="butt" stylesheets="@../css.css" text="modify" textFill="WHITE">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Button>
-      <Button fx:id="db1" layoutX="644.0" layoutY="299.0" mnemonicParsing="false" onAction="#commade" prefHeight="43.0" prefWidth="339.0" styleClass="butt" stylesheets="@../css.css" text="commade " textFill="WHITE">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

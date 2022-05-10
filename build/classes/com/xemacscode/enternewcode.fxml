@@ -13,15 +13,15 @@
 
 <VBox fx:id="oldvbox1" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="496.0" styleClass="blue-panel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xemacscode.EnternewcodeController">
    <children>
-      <ImageView fitHeight="119.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="96.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@logo.png" />
+            <Image url="@campy.png" />
          </image>
          <VBox.margin>
             <Insets left="180.0" />
          </VBox.margin>
       </ImageView>
-      <Label prefHeight="48.0" prefWidth="188.0" styleClass="tf" stylesheets="@../css.css" text="Enter new code" textFill="#2ef222">
+      <Label text="enter new code" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
@@ -44,7 +44,7 @@
       </HBox>
       <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
          <children>
-            <Button fx:id="codeenter" mnemonicParsing="false" onAction="#sendcode" prefHeight="38.0" prefWidth="456.0" styleClass="butt" stylesheets="@../css.css" text="send code" textFill="WHITE">
+            <Button fx:id="codeenter" mnemonicParsing="false" onAction="#sendcode" prefHeight="38.0" prefWidth="456.0" styleClass="blue-btn" text="send code" textFill="WHITE">
                <font>
                   <Font size="17.0" />
                </font>

@@ -149,18 +149,7 @@ private User currentuser;
     }
      
      private void setChosenCamping(User user) {
-        currentuser=user;
-         System.out.println(user.getId());
-         System.out.println(currentuser.getId());
-        usernom.setText(user.getNom());
-        userrole.setText(user.getRole());
-       username.setText(user.getUsername());
-       usernumtel.setText(""+user.getNumtel());
-     userage.setText(user.getAge().toString());
-       useremail.setText(user.getEmail());
-    userprenom.setText(user.getPrenom());
-        chosenFruitCard.setStyle("-fx-background-color: #FAEBD7;\n" +
-                "    -fx-background-radius: 30;");
+       
     }
      
      
@@ -344,6 +333,10 @@ private User currentuser;
       
     }
 
+    @FXML
+    private void gotoformation(MouseEvent event) throws IOException {
+          
+    }
 
 
 

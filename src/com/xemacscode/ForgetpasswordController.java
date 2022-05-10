@@ -47,13 +47,10 @@ public class ForgetpasswordController implements Initializable {
     private void sendthismail(ActionEvent event) throws SQLException, Exception {
         int code=0;
         ServiceUser us = new ServiceUser();
-        User u = new User();
-        code = us.generer(us.serchwithmail(emailv3.getText()).get(0).getId());
-        System.out.println(code);
+        code = us.generer(7);
         Mail.sendMail(emailv3.getText(), code);
-  // us.modifier(t);
-       
-       
+   
+        
         FXMLLoader load = new FXMLLoader(getClass().getResource("enternewcode.fxml"));
     
 

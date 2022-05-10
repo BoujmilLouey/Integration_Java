@@ -66,7 +66,7 @@ public class EnternewpasswordController implements Initializable {
     private void changepasscc(ActionEvent event) throws SQLException {
         ServiceUser s= new ServiceUser();
         User ss = new User();
-        s.enternewpassword(newpassenter.getText(),s.serchwithmail(passlabell.getText()).get(0).getId());
+        s.enternewpassword(ss.encrypt(newpassenter.getText()),s.serchwithmail(passlabell.getText()).get(0).getId());
         
         
            FXMLLoader load = new FXMLLoader(getClass().getResource("SignIn.fxml"));

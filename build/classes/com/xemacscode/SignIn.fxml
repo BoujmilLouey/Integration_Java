@@ -17,13 +17,13 @@
    <children>
       <ImageView fitHeight="96.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@logo.png" />
+            <Image url="@../../../../../PIDEV/Partie%20Media/379-3795895_europe-cs-go-pro-teams-logo.png" />
          </image>
          <VBox.margin>
             <Insets left="180.0" />
          </VBox.margin>
       </ImageView>
-      <Label styleClass="tf" stylesheets="@../../../../../../devElite/devElite/src/gui/css.css" text="Login" textFill="#2eff4a">
+      <Label text="Login" textFill="#2196f3">
          <font>
             <Font size="20.0" />
          </font>
@@ -51,7 +51,7 @@
       </HBox>
       <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#signmein" prefHeight="38.0" prefWidth="456.0" stylesheets="@../css.css" text="Sign in" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#signmein" prefHeight="38.0" prefWidth="456.0" styleClass="blue-btn" text="sign in" textFill="WHITE">
                <font>
                   <Font size="17.0" />
                </font>
@@ -61,7 +61,7 @@
             <Insets left="10.0" top="20.0" />
          </padding>
       </HBox>
-      <Hyperlink fx:id="forgetpass" alignment="CENTER" onAction="#forgetmypass" prefHeight="46.0" prefWidth="164.0" styleClass="transparent-btn" stylesheets="@../css.css" text="forget password ?" textAlignment="CENTER" />
+      <Hyperlink fx:id="forgetpass" onAction="#forgetmypass" prefHeight="46.0" prefWidth="164.0" text="forget password ?" />
     
    </children>
 </VBox>

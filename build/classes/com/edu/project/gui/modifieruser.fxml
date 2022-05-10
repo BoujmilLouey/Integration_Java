@@ -4,19 +4,12 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" fx:id="anchorme" prefHeight="618.0" prefWidth="874.0" stylesheets="@../values/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edu.project.Controller.ModifieruserController">
    <children>
-      <ImageView fitHeight="618.0" fitWidth="919.0" layoutX="-43.0">
-         <image>
-            <Image url="@../../../xemacscode/ali.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="301.0" layoutY="30.0" text="Modifier User" textFill="WHITE">
+      <Label layoutX="301.0" layoutY="30.0" text="Modifier User">
          <font>
             <Font name="Cambria" size="42.0" />
          </font>
