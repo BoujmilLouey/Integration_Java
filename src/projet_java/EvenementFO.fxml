@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" fx:id="FennetreUtilisateur" prefHeight="582.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet_java.EvenementFOController">
+   <children>
+      <ImageView fitHeight="574.0" fitWidth="884.0" layoutX="3.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/1963694-resume-tech-sci-fi-hologramme-cadre-modele-conception-arriere-plan-vectoriel.jpg" />
+         </image>
+      </ImageView>
+
+      <TableView fx:id="ViewEvenement" layoutX="265.0" layoutY="8.0" prefHeight="116.0" prefWidth="613.0">
+         <columns>
+            <TableColumn fx:id="ViewNomE" prefWidth="204.0" text="Nom de l'evenement" />
+            <TableColumn fx:id="ViewLieu" minWidth="0.0" prefWidth="142.0" text="Lieu" />
+            <TableColumn fx:id="ViewDate" prefWidth="107.0" text="Date" />
+            <TableColumn fx:id="ViewNbrPlace" prefWidth="100.0" text="Place restante" />
+         </columns>
+      </TableView>
+      <Label layoutX="276.0" layoutY="270.0" text="Nom" />
+      <Label layoutX="279.0" layoutY="383.0" text="Age" />
+      <Label layoutX="266.0" layoutY="322.0" text="Prenom" />
+      <TextField fx:id="fpNomP" layoutX="372.0" layoutY="265.0" />
+      <TextField fx:id="fpPrenomP" layoutX="372.0" layoutY="317.0" />
+      <TextField fx:id="fpAgeP" layoutX="372.0" layoutY="378.0" />
+      <Button fx:id="bP" layoutX="584.0" layoutY="503.0" mnemonicParsing="false" onAction="#AjouterParticipants" prefHeight="25.0" prefWidth="95.0" text="Participer !" />
+      <ImageView fx:id="ImageView" fitHeight="328.0" fitWidth="261.0" layoutX="3.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="14.0" layoutY="529.0" mnemonicParsing="false" onAction="#RetourMenu" prefHeight="25.0" prefWidth="82.0" text="Retour" />
+      <HBox layoutX="10.0" layoutY="102.0" prefHeight="142.0" prefWidth="247.0" />
+      <TextField fx:id="tfsearch" layoutX="11.0" layoutY="8.0" onInputMethodTextChanged="#SearchEvenements" promptText="search" />
+      <Button fx:id="btnsearch" layoutX="192.0" layoutY="8.0" mnemonicParsing="false" onAction="#recherche" text="Search" />
+   
+          
+      
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorme" prefHeight="618.0" prefWidth="874.0" stylesheets="@../values/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edu.project.Controller.ModifieruserController">
+   <children>
+      <ImageView fitHeight="618.0" fitWidth="919.0" layoutX="-43.0">
+         <image>
+            <Image url="@../../../xemacscode/ali.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="301.0" layoutY="30.0" text="Modifier User" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="42.0" />
+         </font>
+      </Label>
+      <Button layoutX="227.0" layoutY="410.0" mnemonicParsing="false" onAction="#annuleruser" prefHeight="31.0" prefWidth="194.0" stylesheets="@../values/style.css" text="annuler" textFill="#828282">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="add-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Button layoutX="473.0" layoutY="410.0" mnemonicParsing="false" onAction="#modifieruser" prefHeight="18.0" prefWidth="187.0" stylesheets="@../values/style.css" text="modifier" textFill="#828282">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="add-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <ComboBox fx:id="combobox" layoutX="311.0" layoutY="218.0" prefHeight="27.0" prefWidth="221.0">
+         <styleClass>
+            <String fx:value="add-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </ComboBox>
+   </children>
+   <styleClass>
+      <String fx:value="fruit-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

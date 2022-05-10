@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="1012.0" styleClass="blue-panel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xemacscode.ViewbackfashboardController">
+   <children>
+      <ImageView fitHeight="687.0" fitWidth="1079.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo-1504280390367-361c6d9f38f4.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="listviewback" layoutX="331.0" prefHeight="688.0" prefWidth="695.0" styleClass="blue-panel" stylesheets="@styles.css" />
+   </children>
+</AnchorPane>

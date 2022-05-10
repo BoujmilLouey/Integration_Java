@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="ancherofuser" prefHeight="467.0" prefWidth="749.0" styleClass="pane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xemacscode.ViewoftableuserController">
+   <children>
+      <Label fx:id="nameofuser" layoutX="154.0" layoutY="64.0" prefHeight="21.0" prefWidth="222.0" textFill="WHITE" />
+      <Label fx:id="lastnameofuser" layoutX="154.0" layoutY="129.0" prefHeight="21.0" prefWidth="222.0" textFill="WHITE" />
+      <Label fx:id="emailofuser" layoutX="154.0" layoutY="187.0" prefHeight="21.0" prefWidth="222.0" textFill="#e8e8e8" />
+      <Label fx:id="ageofuser" layoutX="154.0" layoutY="234.0" prefHeight="21.0" prefWidth="222.0" textFill="WHITE" />
+      <Label fx:id="passwordofuser" layoutX="154.0" layoutY="274.0" prefHeight="21.0" prefWidth="222.0" textFill="WHITE" />
+      <Label fx:id="usernameofuser" layoutX="154.0" layoutY="324.0" prefHeight="21.0" prefWidth="222.0" textFill="WHITE" />
+      <ImageView fitHeight="500.0" fitWidth="767.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ddd.jpg" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="575.0" layoutY="194.0" onAction="#ondeleteme" text="delete" />
+   </children>
+</AnchorPane>

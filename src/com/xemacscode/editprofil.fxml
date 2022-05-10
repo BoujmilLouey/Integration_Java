@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancherancher" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1023.0" styleClass="blue-panel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xemacscode.EditprofilController">
+   <children>
+      <Button layoutX="503.0" layoutY="601.0" mnemonicParsing="false" onAction="#modifyprofile" prefHeight="38.0" prefWidth="127.0" styleClass="blue-btn" text="modify" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="884.0" layoutY="34.0" prefHeight="30.0" prefWidth="105.0" text="sign out" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="171.0" fitWidth="196.0" layoutX="379.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tfd.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="203.0" layoutY="135.0" prefHeight="30.0" prefWidth="127.0" text="profil picture:" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="264.0" prefHeight="30.0" prefWidth="105.0" text="username :" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="342.0" prefHeight="30.0" prefWidth="105.0" text="first name :" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="410.0" prefHeight="30.0" prefWidth="105.0" text="last name :" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="342.0" prefHeight="30.0" prefWidth="105.0" text="email :" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="410.0" prefHeight="30.0" prefWidth="105.0" text="date:" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepickmeage" layoutX="707.0" layoutY="410.0" prefHeight="31.0" prefWidth="190.0" />
+      <Label layoutX="578.0" layoutY="490.0" prefHeight="30.0" prefWidth="138.0" text="numero_tel :" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="490.0" prefHeight="30.0" prefWidth="138.0" text="password :" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ffusername" layoutX="379.0" layoutY="264.0" />
+      <TextField fx:id="ffname" layoutX="183.0" layoutY="342.0" />
+      <TextField fx:id="fflast" layoutX="183.0" layoutY="410.0" />
+      <TextField fx:id="ffpass" layoutX="183.0" layoutY="490.0" />
+      <TextField fx:id="ffemail" layoutX="708.0" layoutY="342.0" />
+      <TextField fx:id="ffnumtel" layoutX="708.0" layoutY="490.0" />
+      <Button fx:id="cancelmodif" layoutX="361.0" layoutY="601.0" mnemonicParsing="false" onAction="#cancelme" prefHeight="23.0" prefWidth="93.0" text="cancel" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
